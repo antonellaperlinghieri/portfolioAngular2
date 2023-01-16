@@ -1,0 +1,417 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans:wght@500&family=Poppins:wght@500&family=Roboto:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Tipografia general */
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bg-color: rgb(255, 250, 250);
+    --text-color: #000;
+    --secound-color: #0563bb;
+    --main-color: #faf9f9;
+    --big-font: 5rem;
+    --h2-font: 3rem;
+    --p-font: 1.1rem;
+}
+
+/* estilos barra de navegacion */
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    transition: .3s;
+}
+
+header{
+    background: var(--bg-color);
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-list li {
+    position: relative;
+}
+
+.nav-list a {
+    font-size: var(--p-font);
+    color: var(--text-color);
+    font-weight: 500;
+    padding: 10px 27px;
+    text-decoration: none;
+}
+
+.nav-list a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background:var(--secound-color);
+    bottom: -3px;
+    left: 0;
+    transition: ease .40s;
+}
+.nav-list a:hover::after {
+    width: 100%;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+    padding: 0;
+}
+
+nav.navbar.navbar-expand-lg.navbar-white.bg-white {
+    --bs-navbar-brand-margin-end: 7rem;
+}
+
+ul.navbar-nav {
+    font-family: 'Montserrat';
+}
+
+/* Se elimina los estilos de las listas */
+li {
+    list-style: none;
+}
+
+/* Estilos sección encabezado */
+.foto_perfil {
+    width: 30%;
+    position: absolute;
+    top: 20%;
+    left: 1%;
+    float: left;
+    display: flex;
+    z-index: 10;
+}
+/* titulos Nombre, Experiencia laboral y Educación, Grado de dominios, Mis proyectos*/
+#title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    font-family: "Montserrat", sans-serif;
+}
+
+#title-2 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    letter-spacing: 4px;
+    padding: 16px;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Barra de Progreso */
+.fw-bolder {
+    padding-bottom: 1.25rem;
+    padding-top: 1.25rem;
+    font-weight: bolder !important;
+    font-family: "Montserrat", sans-serif;
+    font-size: 19px;
+}
+
+.section.px-3.px-lg-4.pt-5 {
+    margin: 43px;
+    width: 93%;
+}
+
+/* Estilos sección Mis proyectos */
+
+#row {
+    justify-content: center;
+    margin: auto;
+}
+
+/* Estilos Login */
+.gradient-custom {
+    background: #6a11cb;
+    background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+}
+
+/* estilos botones */
+button.btn.btn-primary {
+    margin: 5px;
+    font-family: 'Roboto', sans-serif
+}
+
+button.btn.btn-primary.btn {
+    margin: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+button.btn.btn-dark {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+button.btn.btn-dark:hover {
+    color: white;
+}
+
+button.btn.btn-danger {
+    font-family: 'Roboto', sans-serif;
+    margin: 6px;
+}
+
+.btn.btn-outline-warning {
+    margin: 7px;
+    --bs-btn-hover-bg: #ab2cfe;
+    --bs-btn-hover-color: #ffff;
+    --bs-btn-hover-border-color: #ab2cfe;
+    --bs-btn-color: #ab2cfe;
+    --bs-btn-border-color: #ab2cfe;
+}
+
+.btn.btn-outline-dark a{
+    text-decoration: none;
+    color: black;
+}
+
+.btn.btn-outline-dark a:hover {
+    color: white;
+}
+
+button#btn-iniciar-sesion.btn.btn {
+    margin: 5px;
+    font-family:'Montserrat';
+}
+
+a.btn.btn-info.mb-3.mr-1 {
+    --bs-btn-color: white;
+    --bs-btn-bg: #0563bb;
+    --bs-btn-border-color:#0563bb;
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-bg:#0563bb ;
+    --bs-btn-hover-border-color:none;
+}
+
+a.btn.btn-info.mb-3 {
+    --bs-btn-color: white;
+    --bs-btn-bg: #0563bb;
+    --bs-btn-border-color:#0563bb;
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-bg:#0563bb ;
+    --bs-btn-hover-border-color:none;
+    margin-left: 5px;
+}
+/* Estilos textos */
+.pink-text {
+    color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+}
+
+.text-danger {
+    font-family: 'Roboto', sans-serif;
+    display: flow-root;
+}
+
+.lead.text-muted {
+    font-family: 'Roboto', sans-serif;
+}
+
+.text-muted {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.fw-dark {
+    display: flex;
+    justify-content: center;
+}
+
+/* Sección educación y experiencia laboral */
+.section-title {
+    text-align: center;
+}
+
+.section-title h1 {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 70px;
+    padding-bottom: 15px;
+    position: relative;
+    color: black;
+}
+
+.section-title h1::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
+}
+
+.section-title h1::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #0563bb;
+    bottom: 0;
+    left: calc(50% - 20px);
+}
+
+/* Seccion mis proyectos y certificados */
+.portfolio-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px,auto));
+    grid-gap: 2rem;
+    align-items: center;
+    margin-top: 2rem;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+}
+/* TABLA SECCIÓN EXPERIENCIA Y EDUCACIÓN */
+
+th {
+    font-size: 19px;
+    font-family: "Montserrat", sans-serif;
+}
+
+td {
+    font-family: 'Roboto', sans-serif;
+}
+
+.layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 12px;
+    transition: all .40s;
+}
+
+.layer:hover {
+    background: linear-gradient(rgba(0,0,0,0.5) 0%, #ffffff);
+}
+
+.layer h5 {
+    position: relative;
+    width: 100%;
+    font-size: 100px;
+    font-weight: 500;
+    color: black;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: all .40s;
+}
+
+.layer h3 {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    margin: revert;
+}
+
+/* CARDS SECCION MIS PROYECTOS Y CERTIFICADOS */
+
+#team {
+    margin: 29px;
+    background: white !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: black;
+    border-color: black;
+    box-shadow: none;
+    outline: none;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: black;
+    border-color: black;
+}
+
+
+section .section-title {
+    text-align: center;
+    color: black;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+#team .card {
+    border: none;
+    background: #ffffff;
+
+}
+
+.frontside {
+    position: relative;
+    --webkit-transform: rotateY(0deg);
+    --ms-transform: rotateY(0deg);
+    z-index: 2;
+    margin-bottom: 30px;
+}
+
+
+.frontside {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 1s;
+    -o-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+.frontside .card {
+    min-height: 312px;
+}
+
+.card a {
+    font-size: 14px;
+    color: white !important;
+}
+
+.frontside .card .card-title {
+    color: black !important;
+    font-family: "Montserrat", sans-serif;
+}
+
+.frontside .card .card-body img {
+    width: 100%;
+    height: 100%;
+}
+
+.container:hover img {
+	transform: scale(1.1, 1.1);
+	z-index: 9;
+}
+
+.card-body.text-center:hover {
+    transform: scale(1.1, 1.1);
+	z-index: 9;
+}
